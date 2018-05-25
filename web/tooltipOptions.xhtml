@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+     
+        <h:panelGrid columns="3" cellpadding="8">
+            
+            <h:outputText value="Focus/Blur :" />
+            <p:inputText id="focus" title="Odaklanma ve cekme Tooltipi" />
+            <p:tooltip id="toolTipfocus" for="focus" showEvent="focus" hideEvent="blur" />
+            
+            <h:outputText value="Position :" />
+            <h:outputLink id="fade" value="#">
+                <h:outputText value="Top Link babay" />
+            </h:outputLink>
+            <p:tooltip id="toolTipFade" for="fade" value="Pozisyon için yapılan Tooltip" />
+            
+            <h:outputText  value="Track Mouse :" />
+            <h:outputLink id="track" value="#">
+                <h:outputText value="Mouse Tracking" />
+            </h:outputLink>
+            <p:tooltip id="toolTipTrack" for="track" value="Mouse Pozisyon tracks" trackMouse="true" />
+            
+            <h:outputText value="Clip/Explode" />
+            <h:outputLink id="grow" value="#">
+                <h:outputText value="Clip/Explode Effects" />
+            </h:outputLink>
+            <p:tooltip id="tooltipGrow" for="grow" value="cilp/explode tarzında güzel" 
+                       showEffect="clip" hideEffect="explode" />
+            
+            
+            <h:outputText value="Content : " />
+            <h:outputLink id="content" value="#">
+                <h:outputText value="Primefaces" />
+            </h:outputLink>
+            <p:tooltip id="toolTipContent" for="content">
+                <p:graphicImage name="com/cokelek/pexel-1.jpeg" />
+            </p:tooltip>
+            
+        </h:panelGrid>
+        
+    </h:body>
+</html>
+
